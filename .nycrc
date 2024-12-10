@@ -1,5 +1,6 @@
 {
   "reporter": ["lcov", "text"],
   "all": true,
-  "include": ["src/**/*.js"]
+  "include": ["src/**/*.js"],
+  "exclude": ["test/**"]
 }
