@@ -21,3 +21,6 @@ Individuals who remove or modify the license file will also carry the consequenc
 ### Original repository can be found at:
 
 https://github.com/otula/COMP.SE.200-2024-2025-1
+
+### Coveralls badge
+[![Coverage Status](https://coveralls.io/repos/github/aalmar1/testing_RL_MA/badge.svg?branch=main)](https://coveralls.io/github/aalmar1/testing_RL_MA?branch=main)
