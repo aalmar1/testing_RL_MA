@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "backup-test": "jest",
-    "test": "mocha"
+    "test": "mocha",
+    "backup-test": "jest"
   },
   "author": "Roope Lindroos & Markus Aaltio",
   "license": "MIT",
