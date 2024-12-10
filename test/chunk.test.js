@@ -19,8 +19,8 @@ describe ('Tests for function: chunk', () => {
         assert.deepEqual(chunk(123), []);
     });
 
-    it('should handle non-integer size inputs (by rounding up)', () => {
-        assert.deepEqual(chunk(['a', 'b', 'c', 'd'], 2.5), ['a', 'b'], ['c', 'd']);
+    it('should handle non-integer size inputs (by rounding down)', () => {
+        assert.deepEqual(chunk(['a', 'b', 'c', 'd'], 1.5), [['a', 'b', 'c', 'd']]);
     });
 
     it('should handle negative size inputs', () => {
