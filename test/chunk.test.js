@@ -32,6 +32,6 @@ describe ('Tests for function: chunk', () => {
     });
 
     it ('should handle size > array.length', () => {
-        expect(chunk(['a', 'b', 'c', 'd'], 5)).to.deep.equal([['a', 'b', 'c', 'd', undefined]]);
+        expect(chunk(['a', 'b', 'c', 'd'], 5)).to.deep.equal([['a', 'b', 'c', 'd']]);
     });
 });
