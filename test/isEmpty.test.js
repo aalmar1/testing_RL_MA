@@ -1,7 +1,7 @@
 import { assert } from "chai";
 import isEmpty from "../src/isEmpty.js";
 
-describe("isEmpty", () => {
+describe("isEmpty.js", () => {
     it('should return true for null or undefined', () => {
         assert.isTrue(isEmpty(null));
         assert.isTrue(isEmpty(undefined));

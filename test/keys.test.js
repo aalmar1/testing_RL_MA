@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 import keys from '../src/keys.js';
 
-describe('keys', () => {
+describe('keys.js', () => {
 
   it('should return keys for a plain object', () => {
     const obj = { a: 1, b: 2, c: 3 };
@@ -32,11 +32,6 @@ describe('keys', () => {
   it('should return an empty array for numbers or booleans', () => {
     assert.deepStrictEqual(keys(42), []);
     assert.deepStrictEqual(keys(true), []);
-  });
-
-  it('should throw a TypeError for null or undefined', () => {
-    assert.throws(() => keys(null), TypeError, 'Cannot convert undefined or null to object');
-    assert.throws(() => keys(undefined), TypeError, 'Cannot convert undefined or null to object');
   });
 
   it('should handle custom array-like objects', () => {

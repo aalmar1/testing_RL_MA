@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 import isSymbol from '../src/isSymbol.js';
 
-describe('isSymbol', () => {
+describe('isSymbol.js', () => {
 
   it('should return true for primitive symbols', () => {
     assert.isTrue(isSymbol(Symbol('test')));

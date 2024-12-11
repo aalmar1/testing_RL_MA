@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 import words from '../src/words.js';
 
-describe('words', () => {
+describe('words.js', () => {
   it('should split a string into words by default', () => {
     assert.deepStrictEqual(words('fred, barney, & pebbles'), ['fred', 'barney', 'pebbles']);
   });

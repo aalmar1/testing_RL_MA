@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 import toString from '../src/toString.js';
 
-describe('toString', () => {
+describe('toString.js', () => {
   it('should return the same string for string inputs', () => {
     assert.strictEqual(toString('hello'), 'hello');
     assert.strictEqual(toString(''), '');
