@@ -23,5 +23,11 @@ describe('defaultTo.js', () => {
         expect(defaultTo(123, 456)).to.equal(123);
     });
 
-    //Maybe some more tests here? Empty objects, arrays, strings, etc.
+    it('should handle objects', () => {
+        expect(defaultTo({ 'a': 1 }, { 'b': 2 })).to.deep.equal({ 'a': 1 });
+    });
+
+    it('should handle arrays', () => {
+        expect(defaultTo([1, 2, 3], [4, 5, 6])).to.deep.equal([1, 2, 3]);
+    });
 });
